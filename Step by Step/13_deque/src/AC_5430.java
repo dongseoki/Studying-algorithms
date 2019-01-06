@@ -15,6 +15,7 @@ public class AC_5430 {
 		Scanner sc = new Scanner(System.in);
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Queue<String> q = new LinkedList<String>();
+		StringBuilder strBuild;
 		
 		String command;
 		String strDeque;
@@ -25,26 +26,27 @@ public class AC_5430 {
 		int length;
 		char ch;
 		
-		int numOfOrder =Integer.parseInt(sc.nextLine());
+		int numOfOrder =Integer.parseInt(br.readLine()); // sc.nextline has problems.
 		for(int i=0;i<numOfOrder;i++) {
 			int Rcount =0;// initialization.
+			strBuild = new StringBuilder();
 			state = 0; // initialization.
 			deque = new ArrayDeque<String>();
-			 //command= sc.nextLine();
-			command = br.readLine();
-			//System.out.println(command + "A");
-			
-			 //n = Integer.parseInt(sc.nextLine());
-			n = Integer.parseInt(br.readLine());
+//			command= sc.nextLine();
+//			n = Integer.parseInt(sc.nextLine());
+//			strDeque = sc.nextLine();
+			 
 			//System.out.println(n);
-			
-			 //strDeque = sc.nextLine();
-			strDeque = br.readLine();
+			 //System.out.println(command + "A");
 			//System.out.println(strDeque + "A");
 			
+			command = br.readLine();
+			n = Integer.parseInt(br.readLine());
+			strDeque = br.readLine();
 			 length = command.length();
 			 
 //			 System.out.println(command);
+//			 System.out.println("Hi");
 //			 System.out.println(n);
 //			 System.out.println(strDeque);
 			 
@@ -75,25 +77,35 @@ public class AC_5430 {
 				 continue;
 			 
 			 strDeque = "[";
-			 if(!deque.isEmpty())
-				 strDeque+=deque.pollFirst();
-			 while(!deque.isEmpty()) {
-				 strDeque+=","+deque.pollFirst();
+			 strBuild.append("[");
+			 if(!deque.isEmpty()) {
+				 //strDeque+=deque.pollFirst();
+				 strBuild.append(deque.pollFirst());
 			 }
-			 strDeque+="]";
-			 q.offer(strDeque);
+				 
+			 while(!deque.isEmpty()) {
+				 //strDeque+=","+deque.pollFirst();
+				 strBuild.append(",");
+				 strBuild.append(deque.pollFirst());
+			 }
+			 
+			 //strDeque+="]";
+			 strBuild.append("]");
+			 q.offer(strBuild.toString());
 		}
 		}catch(Exception e) {
-			e.getMessage();
+			e.printStackTrace();
+			System.out.println("error:" +e.getStackTrace());
 		}
 		
 		
 		
 		while(!q.isEmpty()) {
 			System.out.println(q.poll());
+			//System.out.println("hi");
 		}
 		
-		System.out.println("Hi");
+		//System.out.println("Hi");// test
 		
 	}
 
