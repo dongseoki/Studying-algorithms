@@ -1,3 +1,4 @@
+package examples190206;
 import java.util.*;
 
 class Exercise11_13 {
@@ -16,9 +17,12 @@ class Exercise11_13 {
 
 		TreeMap rank = new TreeMap(new Comparator(){
 			public int compare(Object o1, Object o2) {
-				/*
-				   (1) 알맞은 코드를 넣어 완성하시오.
-				*/
+				if(o1 instanceof Player && o2 instanceof Player) {
+					Player p1 =(Player)o1;
+					Player p2 =(Player)o2;
+					return p2.point -p1.point;
+				}
+				return -1;
 			}
 		});
 

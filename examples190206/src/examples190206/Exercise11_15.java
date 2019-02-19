@@ -1,9 +1,29 @@
+package examples190206;
 import java.util.*;
 import java.text.*;
 
 class Exercise11_15 
 {
 	static int paycheckCount(Calendar from, Calendar to) {
+		
+//		int fromYear = from.get(Calendar.YEAR);
+//		int fromMon = from.get(Calendar.MONTH);
+//		int fromDay = from.get(Calendar.DAY_OF_MONTH);
+//		int toYear = to.get(Calendar.YEAR);
+//		int toMon = to.get(Calendar.MONTH);
+//		int toDay = to.get(Calendar.DAY_OF_MONTH);
+		int monDiff;
+		if(from ==null || to==null)
+			return 0;
+		if(from.equals(to) && from.get(Calendar.DATE) ==21)
+			return 1;
+		monDiff = to.get(Calendar.MONTH) - from.get(Calendar.MONTH);
+		if(monDiff<0 ||from.get(Calendar.YEAR)> to.get(Calendar.YEAR))
+			return 0;
+		if(from.get(Calendar.DAY_OF_MONTH) <=21 && to.get(Calendar.DAY_OF_MONTH) >=21 )
+			monDiff++;
+		if(from.get(Calendar.DAY_OF_MONTH) >21 && to.get(Calendar.DAY_OF_MONTH) <21 )
+			monDiff--;
 		/*
 		  (1) 알맞은 코드를 넣어 완성하시요.
 
