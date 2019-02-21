@@ -3,6 +3,9 @@ import java.util.Scanner;
 
 public class grape_juice_2156 {
 
+	public static int[] memo;
+	public static int[] dp;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -10,77 +13,46 @@ public class grape_juice_2156 {
 		ArrayList<Integer> maxGrape = new ArrayList<Integer>();
 		ArrayList<Integer> maxGrapeState = new ArrayList<Integer>();
 		int num = sc.nextInt();
-		for(int i=0;i<num;i++) {
+		grape.add(0);// start index is one.
+		for (int i = 0; i < num; i++) {
 			grape.add(sc.nextInt());
 		}
 		
-		int length = grape.size();
-		
-		
-		maxGrape.add(grape.get(0));
-		maxGrapeState.add(1);
-		int[] ca = new int[3];
-		int max;
-		
-		for(int i=1;i<num;i++) {
-			for(int j=0;j<3;j++)
-				ca[j] =0;
-			max =0;
-			//1 그 수를 포함, 그 전수를 포함
-			// 2그 수를 포함 , 그전수를 포함X
-			//3 그 수를 포함 하지 않음
-			
-			ca[0] = grape.get(i) + grape.get(i-1); 
-			if(i-3>=0)
-				ca[0]+=maxGrape.get(i-3);
-			
-			ca[1] = grape.get(i);
-			if(i-2>=0)
-				maxGrape.get(i-2);
-			ca[2] = maxGrape.get(i-1);
-			
-			//System.out.println(ca[0]+" "+ ca[1]+" " + ca[2]);
-			int caseT=0;
-			for(int j=0;j<3;j++) {
-				if(max<ca[j]) {
-					max = ca[j];
-					caseT = j;
-				}
-			}
-			
-			if(caseT==0) 
-				maxGrapeState.add(2);
-			else
-				maxGrapeState.add(1);
-			
-			maxGrape.add(max);
+		dp = new int[num + 1];
+		for (int i = 0; i < num + 1; i++) {
+			dp[i] = -1;
 		}
-//		for(int i=0;i<maxGrape.size();i++) {
-//			System.out.println(maxGrape.get(i));
-//		}
-		//int sum = drinkingALot(grape,0, 0,length,0);
-		//System.out.println(sum);
-		System.out.println(maxGrape.get(maxGrape.size()-1));
+
+		int length = grape.size() - 1;
+
+		System.out.println(drinkingALot_TopDown(grape, length));
+		
 
 	}
-	
-	public static int drinkingALot(ArrayList<Integer> grape,int sum, int start, int length, int state) {
-	// state true : you can drink grape juice 연달아.
-		// end  term.
-		if(start>=length) {
-			return sum;
+
+	public static int drinkingALot_TopDown(ArrayList<Integer> grape, int length) {
+		// 최대를 마시는 경우를 저장할 것이다.
+		// state true : you can drink grape juice 연달아.
+		// end term.
+		
+		if(length ==0)
+			return 0;
+		if(length ==1)
+			return grape.get(1);
+		if(length ==2)
+			return grape.get(1)+ grape.get(2);
+		
+		if (dp[length] != -1)
+			return dp[length];
+		for (int i = 1; i <= 3; i++) {
+			if (dp[length - i] == -1)
+				dp[length - i] = drinkingALot_TopDown(grape, length - i);
 		}
-		
-		//case 1 : skip this index th juice.
-		int case1 = drinkingALot(grape, sum, start+1, length, 0);
-		
-		int case2=0;
-		if(state<2) {
-			case2 = drinkingALot(grape, sum+ grape.get(start), start+1, length, state+1);
-		}
-		
-		return Math.max(case1, case2);
-		
+
+		int temp = Math.max(dp[length - 3] + grape.get(length - 1) + grape.get(length),
+				dp[length - 2] + grape.get(length));
+		temp = Math.max(temp, dp[length - 1]);
+		return temp;
 	}
 
 }
