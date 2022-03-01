@@ -1,0 +1,15 @@
+auto 는 자동으로 자료형을 계산한다.
+ex ) auto num =10;
+
+for(auto iter: arr[node])
+
+for(int i=0;i<arr[node].size();i++)
+
+
+long long int
+long long 찾기.
+
+미친수 문제.
+
+부분문제의 개수 X 한부분 문제를 푸는데 걸리는 시간 
+O(N) * O(1)

@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\math">
+      <UniqueIdentifier>{2dc49fe4-5027-46ae-a741-6bc900c707b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\06 tree">
+      <UniqueIdentifier>{838a607c-0195-4ecb-b691-10c54d1c533d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\06 tree\25 Disjoint set">
+      <UniqueIdentifier>{6285d7d7-279b-4bef-a87b-2d1600e71869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\06 tree\21 tree implemetation and circulation">
+      <UniqueIdentifier>{3242de3d-c680-45c8-8cc5-ab652639ef6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\06 tree\22 binary search tree">
+      <UniqueIdentifier>{3e545570-2f78-464b-a965-7232ced3ee0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\06 tree\23 priority queue and heap">
+      <UniqueIdentifier>{fa6ca2e4-8b67-430a-9f91-5d86ac47cdd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UCPC_2019_예선">
+      <UniqueIdentifier>{8862cd1b-656f-4feb-b303-21f387a09fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07 graph">
+      <UniqueIdentifier>{7c6bf628-29c9-4686-a113-d8c5b5d411a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07 graph\30 shortest path algorithm">
+      <UniqueIdentifier>{43d460f2-74a5-42a6-9471-0929c6339da0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07 graph\30 shortest path algorithm\30.2 daikstra 다익스트라">
+      <UniqueIdentifier>{223d3d57-6ea9-4f69-8c49-35c60f3b87f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\06 tree\24 segment tree">
+      <UniqueIdentifier>{1ecfc0d7-345c-4265-8681-d741626c100e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\06 tree\26 try">
+      <UniqueIdentifier>{117f0173-fbf6-4447-8844-185ccc1bf460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07 graph\31 minimum spanning tree">
+      <UniqueIdentifier>{2d1706be-549b-4aea-9122-fb384cdc17d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07 graph\31 minimum spanning tree\kruskal 크루스칼">
+      <UniqueIdentifier>{145261af-3197-4a08-8998-5c5d02215ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07 graph\31 minimum spanning tree\prim 프림">
+      <UniqueIdentifier>{23cdba19-b278-4e06-b965-20e3c8bc222b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07 graph\32 network flow">
+      <UniqueIdentifier>{93a705f3-3f16-487a-8781-4732c7063189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07 graph\32 network flow\ford-fulkerson algorithm 포드 풀커슨">
+      <UniqueIdentifier>{8d474bc3-11b8-44b7-864a-56578b15749d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\07 graph\32 network flow\Bipartite matching 이분 매칭">
+      <UniqueIdentifier>{fe6d2921-fba2-4cdf-a412-a31666a21164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04 famous algorithm">
+      <UniqueIdentifier>{8397f3f0-2997-4ad1-809b-8556127b0767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04 famous algorithm\13 analyse numérique">
+      <UniqueIdentifier>{11699c2a-26c5-432d-9eb7-26c5f9d74d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04 famous algorithm\14 number theory">
+      <UniqueIdentifier>{7aa3d623-2816-4124-9dc1-2ccb2da7daa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04 famous algorithm\15 Computational Geometry">
+      <UniqueIdentifier>{8fe6490a-5651-4b1f-a8c2-466b5e1673af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04 famous algorithm\14 number theory\14.2 prime number">
+      <UniqueIdentifier>{0fca02fb-648e-4361-814f-c4be2d772031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04 famous algorithm\16 new 확률">
+      <UniqueIdentifier>{82770bb0-3f65-456b-ac7e-5eb419637cb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\20190831_실리콘벨리_코테">
+      <UniqueIdentifier>{49484f3d-0b16-46e7-91c7-c70b62f061e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\카카오 코테">
+      <UniqueIdentifier>{9d5dc5b1-2e9b-4cb5-9391-ee2a0f16f118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\05 basic data structure">
+      <UniqueIdentifier>{a55162eb-a8b7-4173-ba17-7b2f96f2b4c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\05 basic data structure\18 선형 자료 구조">
+      <UniqueIdentifier>{5df5ec7f-299f-493b-b46f-6bb500c0acbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\05 basic data structure\18 선형 자료 구조\18.2 동적배열">
+      <UniqueIdentifier>{198c4ba8-bf8f-42e2-bdef-a3f0bdc90b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\05 basic data structure\연관 컨테이너">
+      <UniqueIdentifier>{8a5d4c5f-90c3-44da-a6d2-63335fb0ace3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\acm">
+      <UniqueIdentifier>{bf7eed5a-b1c4-44d2-bf44-30fa0389d66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\acm\Asia Regional - Seoul 2018">
+      <UniqueIdentifier>{e84bf6e4-4b45-404f-898e-412cf813425f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\acm\Seoul Nationalwide Internet Competition 2018 acm">
+      <UniqueIdentifier>{d51f1e3a-82a0-42ff-96ed-d28bb1b2d12c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\nhn">
+      <UniqueIdentifier>{381ce97a-25b1-46b0-a47b-d60de24c554f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\acm\Daejeon Nationalwide Internet Competition 2017">
+      <UniqueIdentifier>{e1a8b44c-7f6e-4c72-91d0-4b88dbd5456b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\mingeongha">
+      <UniqueIdentifier>{87729b86-f3ed-4996-b0f8-d559042e9319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\acm\Asia Regional - Seoul 2019">
+      <UniqueIdentifier>{f6cfff5a-51c2-4c33-99fd-694ce7c2864f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\mingeongha\04graph">
+      <UniqueIdentifier>{1f485b76-27ce-4271-b2ba-cd0cc3ba9a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\카카오 겨울 인턴쉽 코테">
+      <UniqueIdentifier>{4a66b402-7683-4756-ae18-32104a533ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\mingeongha\05greedy">
+      <UniqueIdentifier>{af2de6fb-db24-412a-a104-06f79782b126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\mingeongha\06dynamic">
+      <UniqueIdentifier>{aa014e9d-5674-4743-9de6-b1c260dec203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스">
+      <UniqueIdentifier>{5881fa16-2519-408e-9ec5-2cb470524797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스\level1">
+      <UniqueIdentifier>{8a30819e-5783-41a2-aa5e-fc8686f24404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스\level2">
+      <UniqueIdentifier>{aebd8dd7-5fc6-49d8-bd62-4b9199961426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스\level2 page2">
+      <UniqueIdentifier>{6d342ad2-fe50-4dc9-ad60-cfa5f4bb0ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스\level2 page2\pg3">
+      <UniqueIdentifier>{68613933-16a6-4c82-b4fb-2779be0e450b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스\level3">
+      <UniqueIdentifier>{d5f72ea2-1d67-4559-9a22-9ffc13ac27b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스\level3\pg1">
+      <UniqueIdentifier>{b2cc156f-081a-4329-b947-abfb4e3d29de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스\level3\pg2">
+      <UniqueIdentifier>{0a185fd8-c23a-41f8-9130-afd5b7469c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\삼성역량">
+      <UniqueIdentifier>{0758b44f-18ac-4256-ba48-dc8b480041d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\카카오 코테\2019 KAKAO BLIND RECRUITMENT">
+      <UniqueIdentifier>{06736261-40b3-4cf2-a3ee-510d1487b958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\카카오 코테\2020">
+      <UniqueIdentifier>{65ab5ccf-d24e-4109-9836-214ff7d54bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\sw마에">
+      <UniqueIdentifier>{e054641f-2281-4404-a51b-1a1a8542954e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\z">
+      <UniqueIdentifier>{32330c87-799c-4008-888b-50557df3ec02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\카카오 코테\2020 인턴">
+      <UniqueIdentifier>{ac3a1dc7-efeb-44ca-ab5d-855ec9b90e51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\이승준">
+      <UniqueIdentifier>{fd174d7a-a241-4bc7-8563-bdd6c0fd8cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UCPC_2020_예선">
+      <UniqueIdentifier>{d92b37a0-e933-40e6-96b0-0ce0a711df24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="incorrectly_implemented_body_of_eratosthenes_15897.cpp">
+      <Filter>소스 파일\math</Filter>
+    </ClCompile>
+    <ClCompile Include="expression_of_set_1717.cpp">
+      <Filter>소스 파일\06 tree\25 Disjoint set</Filter>
+    </ClCompile>
+    <ClCompile Include="Let_s_go_on_a_trip_1976.cpp">
+      <Filter>소스 파일\06 tree\25 Disjoint set</Filter>
+    </ClCompile>
+    <ClCompile Include="binary_search_tree_5639.cpp">
+      <Filter>소스 파일\06 tree\22 binary search tree</Filter>
+    </ClCompile>
+    <ClCompile Include="binary_search_tree_example.cpp">
+      <Filter>소스 파일\06 tree\22 binary search tree</Filter>
+    </ClCompile>
+    <ClCompile Include="tree_circulation_1991.cpp">
+      <Filter>소스 파일\06 tree\21 tree implemetation and circulation</Filter>
+    </ClCompile>
+    <ClCompile Include="A.cpp">
+      <Filter>소스 파일\UCPC_2019_예선</Filter>
+    </ClCompile>
+    <ClCompile Include="F.cpp">
+      <Filter>소스 파일\UCPC_2019_예선</Filter>
+    </ClCompile>
+    <ClCompile Include="H.cpp">
+      <Filter>소스 파일\UCPC_2019_예선</Filter>
+    </ClCompile>
+    <ClCompile Include="0803_1504.cpp">
+      <Filter>소스 파일\07 graph\30 shortest path algorithm\30.2 daikstra 다익스트라</Filter>
+    </ClCompile>
+    <ClCompile Include="daikstra_1917.cpp">
+      <Filter>소스 파일\07 graph\30 shortest path algorithm\30.2 daikstra 다익스트라</Filter>
+    </ClCompile>
+    <ClCompile Include="segment_tree_example.cpp">
+      <Filter>소스 파일\06 tree\24 segment tree</Filter>
+    </ClCompile>
+    <ClCompile Include="range_minimum_sum_2042.cpp">
+      <Filter>소스 파일\06 tree\24 segment tree</Filter>
+    </ClCompile>
+    <ClCompile Include="fenwicktree_example_2042.cpp">
+      <Filter>소스 파일\06 tree\24 segment tree</Filter>
+    </ClCompile>
+    <ClCompile Include="try using.cpp">
+      <Filter>소스 파일\06 tree\26 try</Filter>
+    </ClCompile>
+    <ClCompile Include="kruskal_exacmple.cpp">
+      <Filter>소스 파일\07 graph\31 minimum spanning tree\kruskal 크루스칼</Filter>
+    </ClCompile>
+    <ClCompile Include="prim_example.cpp">
+      <Filter>소스 파일\07 graph\31 minimum spanning tree\prim 프림</Filter>
+    </ClCompile>
+    <ClCompile Include="ford_fulkerson_example_adjacent_matrix.cpp">
+      <Filter>소스 파일\07 graph\32 network flow\ford-fulkerson algorithm 포드 풀커슨</Filter>
+    </ClCompile>
+    <ClCompile Include="열혈강호_11375.cpp">
+      <Filter>소스 파일\07 graph\32 network flow\Bipartite matching 이분 매칭</Filter>
+    </ClCompile>
+    <ClCompile Include="fly_10775.cpp">
+      <Filter>소스 파일\06 tree\25 Disjoint set</Filter>
+    </ClCompile>
+    <ClCompile Include="5052_phone.cpp">
+      <Filter>소스 파일\06 tree\26 try</Filter>
+    </ClCompile>
+    <ClCompile Include="9372.cpp">
+      <Filter>소스 파일\07 graph\31 minimum spanning tree\kruskal 크루스칼</Filter>
+    </ClCompile>
+    <ClCompile Include="1671.cpp">
+      <Filter>소스 파일\07 graph\32 network flow\Bipartite matching 이분 매칭</Filter>
+    </ClCompile>
+    <ClCompile Include="2188.cpp">
+      <Filter>소스 파일\07 graph\32 network flow\Bipartite matching 이분 매칭</Filter>
+    </ClCompile>
+    <ClCompile Include="keep_reading_while_input_newline.cpp">
+      <Filter>소스 파일\07 graph\32 network flow\Bipartite matching 이분 매칭</Filter>
+    </ClCompile>
+    <ClCompile Include="10774.cpp">
+      <Filter>소스 파일\07 graph\32 network flow\Bipartite matching 이분 매칭</Filter>
+    </ClCompile>
+    <ClCompile Include="9934.cpp">
+      <Filter>소스 파일\06 tree\26 try</Filter>
+    </ClCompile>
+    <ClCompile Include="골드바흐의 추측_6588.cpp">
+      <Filter>소스 파일\04 famous algorithm\14 number theory\14.2 prime number</Filter>
+    </ClCompile>
+    <ClCompile Include="카이사르 암호_5598.cpp">
+      <Filter>소스 파일\04 famous algorithm\14 number theory</Filter>
+    </ClCompile>
+    <ClCompile Include="1002.cpp">
+      <Filter>소스 파일\04 famous algorithm\15 Computational Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="dice_game_13250.cpp">
+      <Filter>소스 파일\04 famous algorithm\16 new 확률</Filter>
+    </ClCompile>
+    <ClCompile Include="making_square_1485.cpp">
+      <Filter>소스 파일\04 famous algorithm\15 Computational Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="실리콘 프밍3.cpp">
+      <Filter>소스 파일\20190831_실리콘벨리_코테</Filter>
+    </ClCompile>
+    <ClCompile Include="실리콘 프밍1.cpp">
+      <Filter>소스 파일\20190831_실리콘벨리_코테</Filter>
+    </ClCompile>
+    <ClCompile Include="실리콘 프밍2.cpp">
+      <Filter>소스 파일\20190831_실리콘벨리_코테</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>소스 파일\카카오 코테</Filter>
+    </ClCompile>
+    <ClCompile Include="vector_iterator_example.cpp">
+      <Filter>소스 파일\05 basic data structure\18 선형 자료 구조\18.2 동적배열</Filter>
+    </ClCompile>
+    <ClCompile Include="set_example.cpp">
+      <Filter>소스 파일\05 basic data structure\연관 컨테이너</Filter>
+    </ClCompile>
+    <ClCompile Include="map_example.cpp">
+      <Filter>소스 파일\05 basic data structure\연관 컨테이너</Filter>
+    </ClCompile>
+    <ClCompile Include="16360.cpp">
+      <Filter>소스 파일\acm\Asia Regional - Seoul 2018</Filter>
+    </ClCompile>
+    <ClCompile Include="black_chain_16282.cpp">
+      <Filter>소스 파일\acm\Seoul Nationalwide Internet Competition 2018 acm</Filter>
+    </ClCompile>
+    <ClCompile Include="farm_16283.cpp">
+      <Filter>소스 파일\acm\Seoul Nationalwide Internet Competition 2018 acm</Filter>
+    </ClCompile>
+    <ClCompile Include="electric_sign_test.cpp">
+      <Filter>소스 파일\nhn</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix_multiply_2740.cpp">
+      <Filter>소스 파일\nhn</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer_ex.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="multi_max_14753.cpp">
+      <Filter>소스 파일\acm\Daejeon Nationalwide Internet Competition 2017</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza_Boxes_14754.cpp">
+      <Filter>소스 파일\acm\Daejeon Nationalwide Internet Competition 2017</Filter>
+    </ClCompile>
+    <ClCompile Include="no1_insect_card.cpp">
+      <Filter>소스 파일\nhn</Filter>
+    </ClCompile>
+    <ClCompile Include="2206_벽부수고이동하기.cpp">
+      <Filter>소스 파일\07 graph</Filter>
+    </ClCompile>
+    <ClCompile Include="11728_array_merge.cpp">
+      <Filter>소스 파일\mingeongha</Filter>
+    </ClCompile>
+    <ClCompile Include="C.cpp">
+      <Filter>소스 파일\acm\Asia Regional - Seoul 2019</Filter>
+    </ClCompile>
+    <ClCompile Include="L.cpp">
+      <Filter>소스 파일\acm\Asia Regional - Seoul 2019</Filter>
+    </ClCompile>
+    <ClCompile Include="1629.cpp">
+      <Filter>소스 파일\mingeongha</Filter>
+    </ClCompile>
+    <ClCompile Include="2447.cpp">
+      <Filter>소스 파일\mingeongha</Filter>
+    </ClCompile>
+    <ClCompile Include="11724_연결 요소의 개수.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="2644_촌수계산.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="1743_음식물피하기.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="fibonachi.cpp">
+      <Filter>소스 파일\mingeongha</Filter>
+    </ClCompile>
+    <ClCompile Include="bfs_1260.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="1260_retry.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="1012_유기농배추.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="1316.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="인형뽑기 구현.cpp">
+      <Filter>소스 파일\카카오 겨울 인턴쉽 코테</Filter>
+    </ClCompile>
+    <ClCompile Include="1916_ 다익스트라.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="2178 미로탐색.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="다익스트라 다른 사람 코드 경로 출력을 포함.cpp">
+      <Filter>소스 파일\mingeongha\04graph</Filter>
+    </ClCompile>
+    <ClCompile Include="address_test.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_prim_1922.cpp">
+      <Filter>소스 파일\mingeongha\05greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="mcst_kruscal_9372.cpp">
+      <Filter>소스 파일\mingeongha\05greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="ex14_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="greedy_11047.cpp">
+      <Filter>소스 파일\mingeongha\05greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="remain_money_5585.cpp">
+      <Filter>소스 파일\mingeongha\05greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="11399_atm.cpp">
+      <Filter>소스 파일\mingeongha\05greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="spanning_tree_1197_kruscal.cpp">
+      <Filter>소스 파일\mingeongha\05greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="for문과 while 문 차이.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1로만들기_1463.cpp">
+      <Filter>소스 파일\mingeongha\06dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="2n타일링_11726.cpp">
+      <Filter>소스 파일\mingeongha\06dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="2n타일링_11726_new.cpp">
+      <Filter>소스 파일\mingeongha\06dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="123더하기_9095.cpp">
+      <Filter>소스 파일\mingeongha\06dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="카드구매하기_11052.cpp">
+      <Filter>소스 파일\mingeongha\06dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 압축.cpp">
+      <Filter>소스 파일\프로그래머스\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 내림차순.cpp">
+      <Filter>소스 파일\프로그래머스\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열을 정수로 바꾸기.cpp">
+      <Filter>소스 파일\프로그래머스\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="이상한 문자 만들기.cpp">
+      <Filter>소스 파일\프로그래머스\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="정수 내림차순으로 배치하기.cpp">
+      <Filter>소스 파일\프로그래머스\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="1차 비밀지도.cpp">
+      <Filter>소스 파일\프로그래머스\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="실패율.cpp">
+      <Filter>소스 파일\프로그래머스\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="1차 다트게임.cpp">
+      <Filter>소스 파일\프로그래머스\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="탑.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="프린터.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="전화번호_목록.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="h_index.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="위장.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="example.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="[2020카카오공채] 괄호 변환.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="iter_test.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="큰 수 만들기.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="소수 찾기.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="더 맵게_heap.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="가장큰수.cpp">
+      <Filter>소스 파일\프로그래머스\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="피보나치수.cpp">
+      <Filter>소스 파일\프로그래머스\level2 page2</Filter>
+    </ClCompile>
+    <ClCompile Include="타겟넘버.cpp">
+      <Filter>소스 파일\프로그래머스\level2 page2</Filter>
+    </ClCompile>
+    <ClCompile Include="단체사진 찍기.cpp">
+      <Filter>소스 파일\프로그래머스\level2 page2</Filter>
+    </ClCompile>
+    <ClCompile Include="다음 큰 숫자.cpp">
+      <Filter>소스 파일\프로그래머스\level2 page2</Filter>
+    </ClCompile>
+    <ClCompile Include="라면공장.cpp">
+      <Filter>소스 파일\프로그래머스\level2 page2</Filter>
+    </ClCompile>
+    <ClCompile Include="오픈채팅방.cpp">
+      <Filter>소스 파일\프로그래머스\level2 page2\pg3</Filter>
+    </ClCompile>
+    <ClCompile Include="stringstream_example.cpp">
+      <Filter>소스 파일\프로그래머스\level2 page2\pg3</Filter>
+    </ClCompile>
+    <ClCompile Include="뉴스 클러스터링.cpp">
+      <Filter>소스 파일\프로그래머스\level2 page2\pg3</Filter>
+    </ClCompile>
+    <ClCompile Include="네트워크.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="입국심사.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="타일장식물.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="단어변환.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="땅따먹기.cpp">
+      <Filter>소스 파일\프로그래머스\level2 page2</Filter>
+    </ClCompile>
+    <ClCompile Include="여행경로.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="list_example.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="자물쇠와 열쇠.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오 공채 추석 트래픽.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="n개 선택.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="기둥과 보 설치.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg2</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오 공채 추석 트래픽.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오공채_블록_이동하기.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg2</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오 공채 블록이동하기 재도전.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg2</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_exeample.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg2</Filter>
+    </ClCompile>
+    <ClCompile Include="외벽점검.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg2</Filter>
+    </ClCompile>
+    <ClCompile Include="다리를 지나는 트럭.cpp">
+      <Filter>소스 파일\프로그래머스\level3\pg1</Filter>
+    </ClCompile>
+    <ClCompile Include="소문자로.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="게리맨더링2.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="새로운 게임2.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="쿠팡 문제1cpp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="원판돌리기.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="주사위 윷놀이 딴사람.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="주사위 윷놀이.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="time_example.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="연구소3.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="후보키.cpp">
+      <Filter>소스 파일\카카오 코테\2019 KAKAO BLIND RECRUITMENT</Filter>
+    </ClCompile>
+    <ClCompile Include="erase_test.cpp">
+      <Filter>소스 파일\카카오 코테\2019 KAKAO BLIND RECRUITMENT</Filter>
+    </ClCompile>
+    <ClCompile Include="길 찾기 게임.cpp">
+      <Filter>소스 파일\카카오 코테\2019 KAKAO BLIND RECRUITMENT</Filter>
+    </ClCompile>
+    <ClCompile Include="가사검색.cpp">
+      <Filter>소스 파일\카카오 코테\2020</Filter>
+    </ClCompile>
+    <ClCompile Include="블록 게임.cpp">
+      <Filter>소스 파일\카카오 코테\2019 KAKAO BLIND RECRUITMENT</Filter>
+    </ClCompile>
+    <ClCompile Include="무지의 먹방 라이즈.cpp">
+      <Filter>소스 파일\카카오 코테\2019 KAKAO BLIND RECRUITMENT</Filter>
+    </ClCompile>
+    <ClCompile Include="문제1cpp.cpp">
+      <Filter>소스 파일\sw마에</Filter>
+    </ClCompile>
+    <ClCompile Include="색조.cpp">
+      <Filter>소스 파일\sw마에</Filter>
+    </ClCompile>
+    <ClCompile Include="라스트.cpp">
+      <Filter>소스 파일\sw마에</Filter>
+    </ClCompile>
+    <ClCompile Include="매칭 점수.cpp">
+      <Filter>소스 파일\카카오 코테\2019 KAKAO BLIND RECRUITMENT</Filter>
+    </ClCompile>
+    <ClCompile Include="정규표현식 공부.cpp">
+      <Filter>소스 파일\카카오 코테\2019 KAKAO BLIND RECRUITMENT</Filter>
+    </ClCompile>
+    <ClCompile Include="낚시왕.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="옳은 낚시왕.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="색종이 붙이기.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="index_out_of_range.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="채널링.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="최고의 팀.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="문제1.cpp">
+      <Filter>소스 파일\카카오 코테\2020 인턴</Filter>
+    </ClCompile>
+    <ClCompile Include="문제2.cpp">
+      <Filter>소스 파일\카카오 코테\2020 인턴</Filter>
+    </ClCompile>
+    <ClCompile Include="문제3.cpp">
+      <Filter>소스 파일\카카오 코테\2020 인턴</Filter>
+    </ClCompile>
+    <ClCompile Include="문제4.cpp">
+      <Filter>소스 파일\카카오 코테\2020 인턴</Filter>
+    </ClCompile>
+    <ClCompile Include="tel.c">
+      <Filter>소스 파일\이승준</Filter>
+    </ClCompile>
+    <ClCompile Include="1002 터렛.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="청소년 상어.cpp">
+      <Filter>소스 파일\삼성역량</Filter>
+    </ClCompile>
+    <ClCompile Include="B_try.cpp">
+      <Filter>소스 파일\UCPC_2020_예선</Filter>
+    </ClCompile>
+    <ClCompile Include="H_try.cpp">
+      <Filter>소스 파일\UCPC_2020_예선</Filter>
+    </ClCompile>
+    <ClCompile Include="G_정창현.cpp">
+      <Filter>소스 파일\UCPC_2020_예선</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Uart.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\..\..\Downloads\data.txt">
+      <Filter>소스 파일</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,56 @@
+string str;
+str.at(j) = j 인덱스 문자를 가져온다!
+
+vector로 받는 법을 연습하자
+subvector는 어떻게 만드는 가?
+
+
+sort(arr.begin(), arr.end(), )// default 는 오름차순.
+
+bool compare(int a, int b){
+	if(a.first == b.first)
+		return a.second < b.second // false 면 swap 한다!
+
+}
+
+람다식 도 써보자!!
+
+
+[](parameter) -> bool{
+	
+	
+	
+	
+}
+
+
+static_cast <int> ()
+
+c++ 에서 강제 형변환  할때 사용하는 방법이다.
+c++ 기본 : static_cast<tyoe>
+dynamic_cast<>() // 클래스끼리 강제 형변환 할 때 사용하는 방법이다.
+
+
+numeric_limits<int>::max();
+
+
+subarr ==arr0
+배열 메모리  를 비교 한다.
+오버헤드
+
+카라츠바 알고리즘
+
+vector subarr()
+
+
+행렬곱셈
+https://www.acmicpc.net/problem/2740
+https://www.acmicpc.net/problem/2957
+https://www.acmicpc.net/problem/5639
+https://www.acmicpc.net/problem/1991
+https://www.acmicpc.net/problem/2250
+
+
+
+
+

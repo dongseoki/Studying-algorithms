@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class BigNumberTest {
+public class BigNumberTest3_2 {
 
 //    C:\Github\Studying-algorithms\java_programming\src\test\java\thisiscodingtestwithpython\c03greedy
 //    5 8 3

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "acm_4_tree_and_division_comquer", "acm_4_tree_and_division_comquer\acm_4_tree_and_division_comquer.vcxproj", "{D9838900-FA05-417D-A1C9-C2B6BE9D0ABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9838900-FA05-417D-A1C9-C2B6BE9D0ABB}.Debug|x64.ActiveCfg = Debug|x64
+		{D9838900-FA05-417D-A1C9-C2B6BE9D0ABB}.Debug|x64.Build.0 = Debug|x64
+		{D9838900-FA05-417D-A1C9-C2B6BE9D0ABB}.Debug|x86.ActiveCfg = Debug|Win32
+		{D9838900-FA05-417D-A1C9-C2B6BE9D0ABB}.Debug|x86.Build.0 = Debug|Win32
+		{D9838900-FA05-417D-A1C9-C2B6BE9D0ABB}.Release|x64.ActiveCfg = Release|x64
+		{D9838900-FA05-417D-A1C9-C2B6BE9D0ABB}.Release|x64.Build.0 = Release|x64
+		{D9838900-FA05-417D-A1C9-C2B6BE9D0ABB}.Release|x86.ActiveCfg = Release|Win32
+		{D9838900-FA05-417D-A1C9-C2B6BE9D0ABB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DBE1876-46B5-405F-9D15-82470F7C3347}
+	EndGlobalSection
+EndGlobal
