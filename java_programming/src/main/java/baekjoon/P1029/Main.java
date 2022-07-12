@@ -1,6 +1,5 @@
-package baekjoon;
+package baekjoon.P1029;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 class Identifier {
@@ -35,7 +34,7 @@ class Identifier {
     }
 }
 
-public class P1029 {
+public class Main {
     static Map<Identifier, Integer> memo = new HashMap<Identifier, Integer>();
     static ArrayList<ArrayList<Integer>> buyGraph;
 
@@ -43,7 +42,7 @@ public class P1029 {
 
 
     public static void main(String[] args) {
-        System.out.println("test");
+//        System.out.println("test");
         Scanner sc = new Scanner(System.in);
         int N = Integer.parseInt(sc.nextLine());
         // 0 base
@@ -58,7 +57,7 @@ public class P1029 {
             buyGraph.add(rowItemList);
         }
 
-        int start = 1;
+        int start = 0;
         System.out.println(getMaxPeo(0,0,(1<<start)));
 
 
@@ -78,8 +77,10 @@ public class P1029 {
     }
 
     private static int getMaxPeo(int cuP, int X, int visited) {
+//        System.out.println("getMaxPeo start called cuP: "+ cuP+ " X "+ X+ " visited: "+ visited);
         Identifier identifier = new Identifier(cuP, X, visited);
         if (memo.containsKey(identifier)){
+//            System.out.println("getMaxPeo start returned cuP: "+ cuP+ " X "+ X+ " visited: "+ visited);
             return memo.get(identifier);
         }
         int subMaxPeo = 0;
@@ -96,6 +97,7 @@ public class P1029 {
         }
         final int Result = 1 + subMaxPeo;
         memo.put(new Identifier(cuP, X, visited), Result);
+//        System.out.println("getMaxPeo start returned cuP: "+ cuP+ " X "+ X+ " visited: "+ visited);
         return Result;
     }
 }
