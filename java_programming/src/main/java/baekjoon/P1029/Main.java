@@ -35,6 +35,7 @@ class Identifier {
 }
 
 public class Main {
+    // test
     static Map<Identifier, Integer> memo = new HashMap<Identifier, Integer>();
     static ArrayList<ArrayList<Integer>> buyGraph;
 
