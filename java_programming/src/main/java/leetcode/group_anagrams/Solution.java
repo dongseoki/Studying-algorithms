@@ -26,11 +26,13 @@ public class Solution {
         List<List<String>> answer = new ArrayList<>();
         while(keys.hasNext()){
             String strKey = keys.next();
-            ArrayList<String> arrayList = anagMap.get(strKey);
-
+            ArrayList<String> value = anagMap.get(strKey);
+            List<String> answerItem = new ArrayList<String>();
+            answerItem.addAll(value);
+            answer.add(answerItem);
         }
 
-        return null;
+        return answer;
     }
 
     public static void main(String[] args) {
