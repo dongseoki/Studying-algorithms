@@ -26,8 +26,11 @@ class Codec:
         return answer
 
 
+
     def catchLVR(self, data):
-        if self.data is 'None':
+        content = data[1:-1]
+        nextIdx = findNode(content)
+        findValue(content)
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
