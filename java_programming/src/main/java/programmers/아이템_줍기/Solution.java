@@ -69,46 +69,31 @@ class Point implements  Comparable<Point>{
     }
 }
 class Solution {
-
-
     static int[] dRow = {-1,1,0,0};
     static int[] dCol = {0,0,-1,+1};
 
-
-
-
     public int solution(int[][] rectangle, int characterX, int characterY, int itemX, int itemY) {
         int answer = 0;
-
         answer = tryOneCircleVisit(rectangle, characterX,characterY,itemX,itemY);
-
         return answer;
     }
 
     private int tryOneCircleVisit(int[][] rectangle, int characterX, int characterY, int itemX, int itemY) {
         Set<Point> visitedPointSet  = new HashSet<>();
-        // 데이터 (X1 Y1) 와 (X2 Y2)  에 대해서
-        // 단순 문자열 정렬한 것들중 우선순위의 점을 이용하여
-        // (X1 Y1|X2 Y2) 를 문자열로 저장.(괄호 는 뺴고 생각.)
         List<Integer> candidateAnswerList = new ArrayList<>();
-
-        Point firstPoint = new Point(characterX, characterY);
-
-
-        visitedPointSet.add(firstPoint); //
         Queue<Point> queue = new LinkedList<>();
 
-        queue.add(firstPoint);
-
         Point itemPoint = new Point(itemX, itemY);
+        Point firstPoint = new Point(characterX, characterY);
+
+        visitedPointSet.add(firstPoint); //
+        queue.add(firstPoint);
 
         while(!queue.isEmpty()){
             Point curPoint = queue.poll();
             if(curPoint.equals(itemPoint)){
                 candidateAnswerList.add(visitedPointSet.size()-1);
             }
-
-            //
 
             List<Point> availablePointList = findAvailablePointList(curPoint);
             for (Point p:availablePointList
@@ -139,17 +124,12 @@ class Solution {
                 return true;
             }
         }
-
         return false;
     }
 
     private boolean isItIncluded(int[] recItem, Point p1, Point p2) {
         if(isThisPointInsideFrame(recItem, ((float)p1.getX()+p2.getX())/2, ((float)p1.getY()+p2.getY())/2))
             return true;
-//        if(isThisPointInsideFrame(recItem, p1) && isThisPointOnFrame(recItem, p2))
-//            return true;
-//        if(isThisPointInsideFrame(recItem, p2) && isThisPointOnFrame(recItem, p1))
-//            return true;
         return false;
     }
 
