@@ -1,8 +1,6 @@
 package programmers.아이템_줍기.version2;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 class Solution {
     static int[] dRow = {-1,1,0,0};
@@ -47,7 +45,7 @@ class Solution {
                 break;
             }
 
-            int[][] pointArr = possiblePoints(cur);
+            int[][] pointArr = possiblePoints(cur, visited);
             for (int[] nPoint:pointArr
                  ) {
                 if(visited[nPoint[0]][nPoint[1]]==false && isItOnFrame(rectangle, cur, nPoint)){
@@ -76,7 +74,7 @@ class Solution {
     }
 
     private boolean isItIncluded(int[] recItem2, int[] p1, int[] p2) {
-        if(isThisPointInsideFrame(recItem2, ((float)p1[0]+p2[0])/2, ((float)p1[1]+p2[1]/2)))
+        if(isThisPointInsideFrame(recItem2, ((float)p1[0]+p2[0])/2, ((float)p1[1]+p2[1])/2))
             return true;
         return false;
     }
@@ -89,7 +87,7 @@ class Solution {
     }
 
     private boolean isItEdgeOfRec(int[] recItem, int[] p1, int[] p2) {
-        if(isThisPointOnFrame(recItem, p1))
+        if(isThisPointOnFrame(recItem, p1) && isThisPointOnFrame(recItem, p2))
             return true;
         return false;
     }
@@ -105,17 +103,24 @@ class Solution {
         return false;
     }
 
-    private int[][] possiblePoints(int[] cur) {
-        int[][] pointArr = new int[dRow.length][2];
+    private int[][] possiblePoints(int[] cur, boolean[][] visited) {
+        ArrayList<int[]> pointArrayList = new ArrayList<>();
         for (int idx = 0; idx < dRow.length; idx++) {
-            pointArr[idx][0] = cur[0] + dRow[idx];
-            pointArr[idx][1] = cur[1] + dCol[idx];
+            int searchRow = cur[0] + dRow[idx];
+            int searchCol = cur[1] + dCol[idx];
+            if(0<=searchRow && searchRow < visited.length
+                && 0<=searchCol && searchCol<visited[0].length){
+                pointArrayList.add(new int[]{searchRow, searchCol});
+            }
+        }
+        int[][] pointArr = new int[pointArrayList.size()][];
+        for (int idx = 0; idx < pointArr.length; idx++) {
+            pointArr[idx] = pointArrayList.get(idx);
         }
         return pointArr;
     }
     public static void main(String[] args) {
         Solution solution = new Solution();
-//        System.out.println(solution.solution(new int[][]{{1, 1, 8, 4}, {2, 2, 4, 9}, {3, 6, 9, 8}, {6, 3, 7, 7}}, 9, 7, 6, 1));
         System.out.println(solution.solution(new int[][]{{1,1,7,4},{3,2,5,5},{4,3,6,9},{2,6,8,8}}, 1, 3, 7, 8));
         System.out.println(solution.solution(new int[][]{{1,1,8,4},{2,2,4,9},{3,6,9,8},{6,3,7,7}}, 9, 7, 6, 1));
         System.out.println(solution.solution(new int[][]{{1,1,5,7}}, 1, 1, 4 ,7));
