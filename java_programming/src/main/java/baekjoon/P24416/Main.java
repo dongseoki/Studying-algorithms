@@ -18,7 +18,6 @@ public class Main {
             }
         }
         System.out.println("success");
-        
 //        System.out.printf("%d %d", methodRecursive(n), methodDP(n));
     }
 
