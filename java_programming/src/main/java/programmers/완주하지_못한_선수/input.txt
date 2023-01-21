@@ -1,0 +1,12 @@
+테스트 1
+입력값 〉	new String[]{"leo", "kiki", "eden"}, new String[]{"eden", "kiki"}
+기댓값 〉	"leo"
+실행 결과 〉	실행한 결괏값 ""이 기댓값 "leo"과 다릅니다.
+테스트 2
+입력값 〉	new String[]{"marina", "josipa", "nikola", "vinko", "filipa"}, new String[]{"josipa", "filipa", "marina", "nikola"}
+기댓값 〉	"vinko"
+실행 결과 〉	실행한 결괏값 ""이 기댓값 "vinko"과 다릅니다.
+테스트 3
+입력값 〉	new String[]{"mislav", "stanko", "mislav", "ana"}, new String[]{"stanko", "ana", "mislav"}
+기댓값 〉	"mislav"
+실행 결과 〉	실행한 결괏값 ""이 기댓값 "mislav"과 다릅니다.
