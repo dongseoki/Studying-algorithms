@@ -1,22 +1,22 @@
 package programmers.튜플;
 
-import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Test {
   public static void printEvenWithDebug() {
-    List<Integer> numbers = Arrays.asList(2, 3, 4, 5);
+    Set<Integer> testSet= new HashSet<>();
 
-    numbers.stream()
-//        .peek(x -> System.out.println("\nStart Debug"))
-//        .peek(x -> System.out.println("from stream : " + x))
-        .map(x -> x + 17)
-//        .peek(x -> System.out.println("after stream : " + x))
-        .filter(x -> x % 2 == 0)
-//        .peek(x -> System.out.println("after filter : " + x))
-        .limit(3)
-//        .peek(x -> System.out.println("after limit : " + x))
-        .forEach(System.out::println);
+    List.of("1","2", "3").stream().map((item)->{
+      testSet.add(Integer.valueOf(item));
+      return Integer.valueOf(item);
+    }).collect(Collectors.toList());
+
+    System.out.println("testSet ------");
+    testSet.forEach((item)-> System.out.println("item = " + item));
+
   }
 
   public static void main(String[] args) {
