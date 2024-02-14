@@ -8,7 +8,7 @@ public class Solution {
     int length = nums.length;
     final int EMPTY = 9999999;
     int dupNum = EMPTY;
-    for (int i = 0; i < length; i += 2) {
+    for (int i = 0; i < length; i++) {
       if (i == length - 1) {
         return nums[i];
       }
